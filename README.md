@@ -7,3 +7,4 @@ A discord bot that scrapes guitar sales from musiciansfriend.com and sends them 
  - "yes" to post more results
  - "no" to end the search
   
+![demonstration](img/schecter.png)
