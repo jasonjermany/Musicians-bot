@@ -8,7 +8,7 @@ module.exports = {
 	description: 'finds guitar sales',
 	async execute(message,args) { 
         if(!args[0]){
-            console.log("type a word.");
+            message.channel.send("type a word.");
             return;
         }
 
@@ -75,8 +75,9 @@ module.exports = {
                     return;
                 })
             }
-            if(msg.content.toLowerCase() === "no"){
+            if(msg.content.toLowerCase() === "no" || msg.content.toLowerCase().includes("$sale")){
                 collector.stop();
+                message.channel.send(`Stopped search for: ${low} guitars`)
             }
         }
     }
