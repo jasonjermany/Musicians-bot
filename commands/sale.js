@@ -31,8 +31,7 @@ module.exports = {
             .setTitle(a.guitar_name)
             .setURL(a.link)
             .setDescription("`Sale Price:` " + "**" + a.sale_price + "**" + " \n`Original Price:` " + "**" + a.original_price + "**" + " \n`You save:` **$" + a.price_difference + "**")
-            .setThumbnail(a.guitar_image);
-
+            // .setThumbnail(att.name);
             if(count % 5 == 0){
                 exampleEmbed
                 .setFooter(`Load more results? (${count}/${num})`, 'https://i.imgur.com/wSTFkRM.png');
@@ -60,7 +59,7 @@ module.exports = {
                     .setTitle(a.guitar_name)
                     .setURL(a.link)
                     .setDescription("`Sale Price:` " + "**" + a.sale_price + "**" + " \n`Original Price:` **$" + a.original_price + "**" + " \n`You save:` **$" + a.price_difference + "**")
-                    .setThumbnail(a.guitar_image);
+                    // .setThumbnail(a.guitar_image);
         
                     if(count % 5 == 0){
                         exampleEmbed
