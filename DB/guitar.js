@@ -20,10 +20,6 @@ const guitarSchema = new Schema({
     type: String,
     require: false
   },
-  beef: {
-    type: String,
-    require: false
-  },
   sale_price: {
     type: String,
     require: false
